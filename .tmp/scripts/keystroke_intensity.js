@@ -62,7 +62,6 @@
     recentMaxVolumes = recentAudio.map(function(i) {
       return Math.max.apply(null, i.timeDomainData);
     });
-    console.log(recentMaxVolumes);
     return maxVolume = Math.max.apply(null, recentMaxVolumes) - 127;
   };
 
