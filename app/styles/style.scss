@@ -1,0 +1,22 @@
+
+body {
+  width: 100%;
+}
+
+#text_cursor {
+  font-size: 40px;
+/*  animation: blinking 2s;
+  -webkit-animation: blinking 2s;
+*/  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes blinking {
+  0% {opacity: 0; }
+  50% {opacity: 1; }
+  100% {opacity: 0; }
+}
+@keyframes blinking {
+  0% {max-height: 0px; }
+  100% {max-height: 1050px; }
+}
